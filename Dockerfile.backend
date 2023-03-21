@@ -1,0 +1,7 @@
+FROM bitnami/java:11.0.18-10
+RUN apt update && apt upgrade
+RUN apt install -y default-mysql-client
+
+EXPOSE 8080
+
+ENTRYPOINT /bin/bash
